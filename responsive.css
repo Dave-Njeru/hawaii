@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+    /*navbar*/
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 65px;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: all 0.3s ease-out;
+        gap: 0;
+
+    }
+    .nav-menu li {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+        z-index: 1;
+    }
+
+    /* Disable scrolling when nav menu is active */
+    body.active { overflow: hidden;}
+
+    /* Reduce logo size and navbar height*/
+    .nav-bar img {
+        width: 45px;
+        height: 45px;
+    }
+    .nav-bar { height: 60px; }
+
+    /* Align footer links in column */
+    .footer-links {
+        flex-flow: column nowrap;
+    }
+    .align-links-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Align activities and restaurants in column */
+    .activity,
+    .restaurant {
+        flex-flow: column-reverse;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,169 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*generalling formatting*/
+body { font-family: 'Poppins' }
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Quicksand' !important;
+    font-weight: bold;
+}
+
+
+/*HOME PAGE*/
+/*navbar*/
+.contains-nav {
+    background-color: #837716;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.nav-bar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+}
+.nav-menu li {
+    list-style-type: none;
+    padding: 0;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+.nav-menu a:hover {
+    color: darkorange;
+}
+.nav-bar img {
+    width: 60px;
+    height: 60px;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    background-color: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+}
+
+
+/*hero image*/
+.second-div {
+    margin-top: 85px;
+}
+#hero-image img {
+    height: auto;
+    width: 100%;
+}
+
+/*introduction*/
+#third-section {
+    margin-top: 30px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+/*factoids*/
+#fourth-section {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+}
+#fourth-section div h4 {
+    font-style: italic;
+    color: blue;
+}
+#contains-facts{
+    width: 80%;
+}
+
+/*CTA buttons
+All pages*/
+
+.cta-buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: aqua;
+    height: 60px;
+    align-items: center;
+}
+
+/*Footer
+All pages*/
+.footer-section {
+    background-color: #34A434;
+    color: white;
+    margin-top: 20px;
+}
+.footer-links{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.payment-icons {
+    height: 25px;
+    width: auto;
+}
+.contains-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contains-list li { margin-top: 5px; }
+.phoneNumber { font-size: x-large; }
+
+.footer {
+    padding-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*ACTIVITIES PAGE & RESTAURANTS PAGE*/
+/*Activities & Restaurants*/
+#contains-activities,
+#contains-restaurants{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.activity,
+.restaurant {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 50px;
+}
+.activity div,
+.restaurant div {
+    width: 100%;
+}
+.activity-image,
+.restaurant-image {
+    width: 100%;
+}
+
+/* Transition*/
+.links ul li a,
+.nav-menu a,
+.bar {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
